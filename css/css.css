@@ -1,1 +1,154 @@
- 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ============ Mobile ============ */
+.page-wrapper {
+  max-width: 479px;
+  margin: 0 auto;
+}
+nav {
+  display: none;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background: #7202BB;
+}
+.top-nav-wrapper {
+  color: white;
+  width: 319px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  position: relative;
+}
+.top-nav-container_logo {
+  width: 258px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-nav-container_logo h1 {
+  text-transform: uppercase;
+  font-size: 33px;
+  font-weight: bold;
+}
+.top-nav-container_logo hr {
+  width: 31px;
+  height: 3px;
+  border: none;
+  background: white;
+  position: relative;
+  bottom: 2px;
+  left: 4px;
+  transform: rotate(90deg);
+}
+.top-nav-container_logo p {
+  width: 101px;
+  font-size: 10px;
+  line-height: 16px;
+}
+.top-nav-container-burger {
+  position: relative;
+}
+#burger-toogle {        /* стилизуем бургер меню*/
+  opacity: 0;
+}
+.burger-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 29px;
+  right: 0;
+  width: 32px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 1;
+}
+.burger-button>span, .burger-button>span::before, .burger-button>span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: white;
+  border-radius: 4px;
+  transition-duration: 0.3s;
+}
+.burger-button>span::before {
+  content: "";
+  top: -10px;
+}
+.burger-button>span::after {
+  content: "";
+  top: 10px;
+}
+.burger-back {
+  visibility: hidden;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(38, 1, 63, 0.7);
+  list-style: none;
+}
+.burger-box {
+  width: 185px;
+  height: 100%;
+  background: #7202bb;
+  margin-left: auto;
+  padding-top: 60px;
+  list-style: none;
+  transition-duration: 0.3s;
+}
+.burger-box li {
+  margin-top: 17px;
+  text-align: center;
+}
+.burger-item {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+  transition-duration: 0.3s;
+}
+.burger-box li:nth-child(8) {
+  margin-top: 2px;
+  opacity: 0.5;
+}
+.burger-box li:nth-child(8) .burger-item {
+  font-size: 10px;
+}
+.burger-box li:nth-child(9) {
+  border: 2px solid white;
+  margin: 17px 15px 0 15px;
+  border-radius: 8px;
+}
+.burger-box li:nth-child(9) .burger-item {
+  font-size: 14px;
+  white-space: normal;
+
+}
+#burger-toogle:checked~.burger-button>span {
+  transform: rotate(45deg);
+}
+#burger-toogle:checked~.burger-button>span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#burger-toogle:checked~.burger-button>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#burger-toogle:checked~.burger-back {
+  visibility: visible;
+  right: 0;
+
+}
