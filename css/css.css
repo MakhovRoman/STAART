@@ -1,11 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto Slab', serif;
 }
 
-/* ============ Mobile ============ */
+/* =================== Mobile =================== */
+/* ====== Top Menu ====== */
 .page-wrapper {
   max-width: 479px;
+  width: 100vw;
   margin: 0 auto;
 }
 nav {
@@ -54,10 +57,10 @@ header {
   font-size: 10px;
   line-height: 16px;
 }
-.top-nav-container-burger {
+.top-nav-container-burger {  /* стилизуем бургер меню*/
   position: relative;
 }
-#burger-toogle {        /* стилизуем бургер меню*/
+#burger-toogle {
   opacity: 0;
 }
 .burger-button {
@@ -134,7 +137,6 @@ header {
 .burger-box li:nth-child(9) .burger-item {
   font-size: 14px;
   white-space: normal;
-
 }
 #burger-toogle:checked~.burger-button>span {
   transform: rotate(45deg);
@@ -150,5 +152,47 @@ header {
 #burger-toogle:checked~.burger-back {
   visibility: visible;
   right: 0;
-
+}
+/* ====== Product Place ====== */
+.productPlace {
+  width: 100%;
+  padding-top: 79.75%;
+  background-image: url(../images/phone/top_background_1_1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: relative;
+}
+.productPlace-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 186px;
+  width: 320px;
+  margin: auto auto;
+  text-align: center;
+}
+.productPlace-wrapper p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+.productPlace-wrapper p {
+  font-size: 12px;
+}
+.productPlace-wrapper p:first-child span {
+  color: #7202BB;
+}
+.productPlace-wrapper a {
+  text-decoration: none;
+  padding: 10px;
+  background: #7202BB;
+  color: white;
+  font-size: 11px;
+  border-radius: 8px;
 }
