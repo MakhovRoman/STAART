@@ -303,4 +303,38 @@ header {
   grid-column: 1/2;
   grid-row: 2/3;
   background: #7202BB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nit-wrapper {
+  width: 303px;
+  height: 137px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.nit-wrapper h3 {
+  font-size: 15px;
+}
+.nit-content {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.nit-item:nth-child(even) {
+  text-align: right;
+}
+.nit-item p {
+  font-size: 30px;
+  font-weight: 900;
+}
+.nit-item p:last-child {
+  font-size: 8px;
+  opacity: 0.75;
+  margin-top: -5px;
 }
