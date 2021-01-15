@@ -3,6 +3,10 @@
   padding: 0;
   font-family: 'Roboto Slab', serif;
 }
+@font-face {
+  font-family: 'Eastman Trial';
+  src: url(/fonts/eastman-trial.regular.otf);
+}
 
 /* =================== Mobile =================== */
 /* ====== Top Menu ====== */
@@ -382,7 +386,7 @@ header {
   padding-left: 160px;
   background-image:  url(../images/phone/Group_6-1.png), url(../images/phone/Group_6-2.png), url(../images/phone/Group_6.png) ;
   background-repeat: no-repeat;
-  background-position:  7% 7%, 20% 85%,2% -35%;
+  background-position:  7% 7%, 20% 85%, 2% -35%;
 }
 .success-content {
   max-width: 231px;
@@ -421,4 +425,69 @@ header {
   font-size: 12px;
   font-weight: 500;
   text-decoration: none;
+}
+@media (max-width: 400px) {
+  .success-content {
+    max-width: 200px;
+  }
+  .success-content h3 {
+    font-size: 20px;
+  }
+  .success-content h2 {
+    font-size: 28px;
+    margin-left: 15px;
+  }
+  .success-content p {
+    font-size: 11px;
+  }
+  .success-wrapper {
+    background-position: 8% 2%, 15% 100%, 0% 100%;
+  }
+}
+
+/* ====== Services ====== */
+
+div[class^="services"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.services-wrapper {
+  width: 243px;
+  margin: 35px auto;
+}
+.services-content {
+  text-align: center;
+  margin-top: 100px;
+  background: #7202BB;
+  padding: 63px 15px 15px 15px;
+  border-radius: 15px;
+  position: relative;
+}
+.services-content img {
+  position: absolute;
+  right: 30%;
+  left: 30%;
+  bottom: 80%;
+}
+.services-content * {
+  font-family: 'Eastman Trial';
+  color: white;
+  text-align: center;
+}
+.services-content h3 {
+  font-size: 15px;
+  font-weight: 600;
+  width: 117px;
+}
+.services-content p {
+  font-size: 13px;
+  margin-top: 18px;
+  opacity: 0.75;
+}
+.services-content a {
+  margin-top: 28px;
+  text-decoration: none;
+  border-bottom: 1.5px solid white;
 }
