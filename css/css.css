@@ -247,7 +247,7 @@ header {
   visibility: hidden;
 }
 .numbers_radio-content h2 {
-  font-size: 3.5vw;
+  font-size: 13px;
   width: 200px;
   margin-left: -15px;
   margin-top: 0;
@@ -337,4 +337,88 @@ header {
   font-size: 8px;
   opacity: 0.75;
   margin-top: -5px;
+}
+
+/* ====== Helpful ====== */
+
+.helpful-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 319px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.helpful-wrapper>p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.helpful-content {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.helpful-content h3 {
+  font-size: 14px;
+  margin-top: 12px;
+  font-weight: bold;
+  color: #7202BB;
+}
+.helpful-content p {
+  font-size: 11px;
+  margin-top: 6px;
+  width: 219px;
+}
+
+/* ====== Succes ====== */
+
+.success {
+  background: #F2F2F2;
+}
+.success-wrapper {
+  padding-left: 160px;
+  background-image:  url(../images/phone/Group_6-1.png), url(../images/phone/Group_6-2.png), url(../images/phone/Group_6.png) ;
+  background-repeat: no-repeat;
+  background-position:  7% 7%, 20% 85%,2% -35%;
+}
+.success-content {
+  max-width: 231px;
+  display: flex;
+  flex-direction: column;
+}
+.success-content h3 {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: right;
+  line-height: 31px;
+}
+.success-content h2 {
+  font-size: 34px;
+  color: #7202BB;
+  width: 100%;
+  text-align: center;
+}
+.success-content p {
+  font-size: 13px;
+  font-weight: 300;
+  text-align: right;
+  width: 179px;
+  margin-left: auto;
+  margin-top: 10px;
+  opacity: 0.75;
+}
+.success-content a {
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 12px 10px;
+  border-radius: 8px;
+  background: #7202BB;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
 }
