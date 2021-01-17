@@ -426,7 +426,7 @@ header {
   font-weight: 500;
   text-decoration: none;
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .success-content {
     max-width: 200px;
   }
@@ -490,4 +490,56 @@ div[class^="services"] {
   margin-top: 28px;
   text-decoration: none;
   border-bottom: 1.5px solid white;
+}
+.services-item {
+  width: 100vw;
+  margin-top: 30px;
+  position: relative;
+}
+.services-item hr {
+  width: 100%;
+  border: 1px solid #7202BB;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+}
+.services-text {
+  width: 265px;
+  font-family: 'Roboto Slab';
+  text-align: center;
+  font-size: 14px;
+  z-index: 10;
+  background: white;
+}
+
+
+/* ====== Additional ====== */
+
+.additional-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.additional-wrapper h2 {
+  width: 280px;
+  text-align: center;
+}
+.additional-content {
+  width: 320px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 30px 22px;
+}
+.additional-item-pic {
+  height:110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.additional-item p {
+  font-size: 7px;
+  text-align: center;
+  margin-top: 5px;
 }
