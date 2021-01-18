@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: 'Eastman Trial';
-  src: url(/fonts/eastman-trial.regular.otf);
+  src: url(../fonts/eastman-trial-regular.otf);
 }
 
 /* =================== Mobile =================== */
@@ -477,7 +477,7 @@ div[class^="services"] {
   text-align: center;
 }
 .services-content h3 {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   width: 117px;
 }
@@ -542,4 +542,60 @@ div[class^="services"] {
   font-size: 7px;
   text-align: center;
   margin-top: 5px;
+}
+
+/* ====== Work ====== */
+
+.work-wrapper {
+  margin: 30px auto;
+  width: 303px;
+}
+.work-wrapper h2 {
+  text-align: center;
+  font-size: 25px;
+}
+.work-content {
+  padding-left: 44px;
+}
+.work-content h3 {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #7202BB;
+}
+.work-content p {
+  font-size: 11px;
+  margin-top: 5px;
+}
+.work-content ol {
+  counter-reset: myCounter;
+}
+.work-content ol li {
+  list-style: none;
+  position: relative;
+}
+.work-content ol li::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  color: white;
+  background: #7202BB;
+  position: absolute;
+  left: -44px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 33px;
+  font-size: 22px;
+  font-family: 'Impact';
+  font-weight: bold;
+  z-index: 2;
+}
+.work-content ol li:not(:last-child)::after {
+  content: "";
+  height: 130%;
+  border: 1px dashed #7202BB;
+  position: absolute;
+  top: 0;
+  left: -28.5px;
+  z-index: 1;
 }
