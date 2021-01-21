@@ -34,18 +34,18 @@ header {
   font-weight: 400;
   position: relative;
 }
-.top-nav-container_logo {
+.top-nav-container_logo, .footer-content-top {
   width: 258px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.top-nav-container_logo h1 {
+.top-nav-container_logo h1, .footer-content-top h1 {
   text-transform: uppercase;
   font-size: 33px;
   font-weight: bold;
 }
-.top-nav-container_logo hr {
+.top-nav-container_logo hr, .footer-content-top hr {
   width: 31px;
   height: 3px;
   border: none;
@@ -55,7 +55,7 @@ header {
   left: 4px;
   transform: rotate(90deg);
 }
-.top-nav-container_logo p {
+.top-nav-container_logo p, .footer-content-top p {
   width: 101px;
   font-size: 10px;
   line-height: 16px;
@@ -805,5 +805,41 @@ footer {
 .footer-wrapper {
   height: 80px;
   width: 291px;
-  background: yellow;
+}
+.footer-content-top {
+  color: white;
+  width: 257px;
+  margin: 0 auto;
+}
+.footer-content-bot {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bot-item {
+  display: flex;
+  flex-flow: column;
+  color: white;
+}
+.footer-bot-item a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.footer-bot-item a:first-child {
+  margin-top: 5px;
+}
+.footer-bot-item a:last-child {
+  font-size: 8px;
+}
+.footer-bot-item p {
+  font-size: 10px;
+  text-align: center;
+}
+.footer-bot-item h3 {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  padding: 0 20px;
+  border: 1px solid white;
+  box-sizing: border-box;
 }
