@@ -424,7 +424,7 @@
         <p>Введите ваши контактные данные чтобы записаться на косультацию</p>
         <form action="#">
           <input type="text" name="userName" placeholder="Имя">
-          <input type="tel" name="userPhone" placeholder="+7 (999) 999-99-99">
+          <input type="tel" name="userPhone" placeholder="+7 (999) 999-99-99" onfocus="this.value='+7'" pattern="\+7[0-9]{1,10}">
           <input type="submit">
         </form>
       </div>
@@ -472,6 +472,24 @@
         </div>
       </div>
     </section>
+    <section class="setup">
+      <div class="setup-wrapper">
+        <h2>Давайте настроим Wildberris для вашего бизнеса</h2>
+        <form action="#">
+          <input type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]">
+          <input type="tel" placeholder="Телефон" pattern="[0-9]{5,11}">
+          <input type="email" placeholder="E-mail">
+          <input type="text" placeholder="Комментарий">
+          <input type="submit">
+        </form>
+        <p>Нажимая кнопку, Вы даете<br><a href="#">согласие на обработку персональных данных</a></p>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+
+      </div>
+    </footer>
   </div>
 </body>
 </html>

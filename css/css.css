@@ -631,12 +631,15 @@ div[class^="services"] {
   margin-bottom: 11px;
   border: 1px solid #E5E5E5;
   box-sizing: border-box;
-}
-.sentence-wrapper input:not([type=submit])::placeholder {
   padding-left: 9px;
   font-size: 11px;
+}
+.sentence-wrapper input:not([type=submit])::placeholder {
   color: black;
   opacity: 0.25;
+}
+.sentence-wrapper input:not([type=submit]):focus {
+  outline: none;
 }
 .sentence-wrapper input[type=submit] {
   width: 163px;
@@ -736,4 +739,71 @@ div[class^="services"] {
 .clients-radio input[type=radio]:checked+label+.clients-radio-item {
   opacity: 1;
   transition: all .75s ease-in-out;
+}
+
+/* ====== Setup ====== */
+
+.setup-wrapper {
+  width: 319px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 12px 20px 15px;
+  border-radius: 24px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.25);
+}
+.setup-wrapper h2 {
+  margin: 0 0 25px 0;
+  font-size: 19px;
+}
+.setup-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+.setup-wrapper form input:not([type=submit]) {
+  margin-bottom: 15px;
+  height: 17px;
+  border: none;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
+.setup-wrapper form input:not([type=submit])::placeholder {
+  opacity: 0.25;
+  font-size: 11px;
+}
+.setup-wrapper form input:not([type=submit]):focus {
+  outline: none;
+  border-bottom:2px solid #7202BB;
+}
+.setup-wrapper form input[type=submit] {
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  border: none;
+  background: #7202bb;
+  border-radius: 9px;
+  margin-bottom: 15px;
+}
+.setup-wrapper p {
+  font-size: 11px;
+}
+.setup-wrapper p a {
+  color: #7202BB;
+}
+
+/* ====== Footer ====== */
+
+footer {
+  height: 110px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-wrapper {
+  height: 80px;
+  width: 291px;
+  background: yellow;
 }
