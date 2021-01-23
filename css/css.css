@@ -874,7 +874,7 @@ footer {
 
 /* =================== Tablete =================== */
 
-@media (max-width: 999px) {
+@media (min-width: 480px) {
   .page-wrapper {
     max-width: 999px;
   }
