@@ -46,7 +46,8 @@
     </header>
     <section class="productPlace">
       <div class="productPlace-wrapper">
-        <p>Разместим ваши товары на <span>Яндекс Маркете</span></p>
+        <p>Разместим ваши товары</p>
+        <p>на <span>Яндекс Маркете</span></p>
         <p>Сервис для продажи товаров на крупных маркетплейсах</p>
         <a href="#">Получить предложение</a>
       </div>
@@ -419,12 +420,12 @@
     </section>
     <section class="sentence">
       <div class="sentence-wrapper">
-        <h2>5000₽ / 2 часа</h2>
+        <h2>5000₽/2 часа</h2>
         <h3>Получите персональный разбор вашего бренда</h3>
         <p>Введите ваши контактные данные чтобы записаться на косультацию</p>
         <form action="#">
           <input type="text" name="userName" placeholder="Имя">
-          <input type="tel" name="userPhone" placeholder="+7 (999) 999-99-99" onfocus="this.value='+7'" pattern="\+7[0-9]{1,10}">
+          <input type="tel" name="userPhone" placeholder="+7 (999) 999-99-99" onfocus="this.value='+7'" pattern="\+7[0-9]{1,10}" maxlength="12">
           <input type="submit">
         </form>
       </div>
@@ -477,7 +478,7 @@
         <h2>Давайте настроим Wildberris для вашего бизнеса</h2>
         <form action="#">
           <input type="text" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]">
-          <input type="tel" placeholder="Телефон" pattern="[0-9]{5,11}">
+          <input type="tel" placeholder="Телефон" pattern="[0-9]{5,11}" maxlength="12">
           <input type="email" placeholder="E-mail">
           <input type="text" placeholder="Комментарий">
           <input type="submit">

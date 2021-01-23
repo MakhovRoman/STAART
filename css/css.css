@@ -184,15 +184,39 @@ header {
   margin: auto auto;
   text-align: center;
 }
-.productPlace-wrapper p:first-child {
+.productPlace-wrapper p {
   font-size: 24px;
   font-weight: bold;
+  position: relative;
 }
-.productPlace-wrapper p {
+.productPlace-wrapper p:nth-child(2) {
+  left: -100px;
+  top: -12px;
+}
+.productPlace-wrapper p:nth-child(3) {
   font-size: 12px;
+  top: -5px;
+ }
+@keyframes type {
+  from  {width: 0px;}
+  to    {width: 200px;}
 }
-.productPlace-wrapper p:first-child span {
+@keyframes blink {
+  form  {border-right-color: black;}
+  to    {border-right-color: transparent;}
+}
+.productPlace-wrapper p span {
   color: #7202BB;
+  display: inline-flex;
+  align-self: flex-end;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 1.5s steps(16) 3 alternate backwards, blink 500ms infinite;
+  border-right: 2px solid black;
+  box-sizing: border-box;
+  padding-right: 5px;
+  margin-left: 10px;
+  position: absolute;
 }
 .productPlace-wrapper a {
   text-decoration: none;
