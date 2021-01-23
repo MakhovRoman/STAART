@@ -878,9 +878,13 @@ footer {
   .page-wrapper {
     max-width: 999px;
   }
+
   /* ====== Top Menu ====== */
+  header {
+    margin-bottom: 48px;
+  }
   .top-nav-wrapper {
-    width: 75%;
+    width: 750px;
   }
   #partner {
     display: flex;
@@ -896,5 +900,57 @@ footer {
   }
   .burger-box li:last-child {
     display: none;
+  }
+
+  /* ====== Product Place ====== */
+
+  .productPlace {
+    height: 337px;
+    width: 769px;
+    padding-top: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-image: url(../images/Tablet/top_background_2.png);
+    background-size: auto 100%;
+    background-position: right;
+  }
+  .productPlace-wrapper {
+    margin: auto 0;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .productPlace-wrapper p:nth-child(2) {
+    left: 0;
+  }
+  .productPlace-wrapper a {
+    font-size: 12px;
+    padding: 10px 25px;
+  }
+}
+
+@media (min-width:480px) and (max-width: 800px) {
+  header {
+    margin-bottom: 6vw;
+  }
+  .top-nav-wrapper {
+    width: 93%;
+  }
+  #partner {
+    width: max-content;
+    height: max-content;
+    font-size: 2vw;
+    padding: 1.5% 5vw;
+  }
+  .productPlace {
+    width: 93%;
+    padding-top: 45.3%;
+    background-size: 61%;
+  }
+}
+
+@media (min-width:480px) and (max-width: 560px) {
+  #partner {
+    padding: 1.5% 3.5vw;
+    margin-right: 5%;
   }
 }
