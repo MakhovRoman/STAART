@@ -11,10 +11,14 @@
 /* ====== Top Menu ====== */
 .page-wrapper {
   width: 100vw;
+  max-width: 479px;
   margin: 0 auto;
   overflow: hidden;
 }
 nav {
+  display: none;
+}
+#partner {
   display: none;
 }
 header {
@@ -866,4 +870,31 @@ footer {
   padding: 0 20px;
   border: 1px solid white;
   box-sizing: border-box;
+}
+
+/* =================== Tablete =================== */
+
+@media (max-width: 999px) {
+  .page-wrapper {
+    max-width: 999px;
+  }
+  /* ====== Top Menu ====== */
+  .top-nav-wrapper {
+    width: 75%;
+  }
+  #partner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 318px;
+    height: 47px;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 9px;
+  }
+  .burger-box li:last-child {
+    display: none;
+  }
 }
