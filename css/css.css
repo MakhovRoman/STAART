@@ -910,12 +910,21 @@ footer {
     padding-top: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    background-image: url(../images/Tablet/top_background_2.png);
-    background-size: auto 100%;
-    background-position: right;
+    background-image: none;
+    display: flex;
+  }
+  .productPlace-img {
+    position:  absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
   }
   .productPlace-wrapper {
-    margin: auto 0;
+    position:  absolute;
+    top: 0;
+    left: 0;
+    right: 55%;
+    bottom: 0;
     text-align: left;
     align-items: flex-start;
   }
@@ -943,8 +952,19 @@ footer {
   }
   .productPlace {
     width: 93%;
+    height: max-content;
+  }
+  .productPlace::before {
+    content: "";
+    display: block;
     padding-top: 45.3%;
-    background-size: 61%;
+  }
+  .productPlace-img {
+    width: 57%;
+  }
+  .productPlace-img img {
+    max-width: 100%;
+    margin-left: auto;
   }
 }
 
