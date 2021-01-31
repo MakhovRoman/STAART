@@ -887,6 +887,7 @@ footer {
 @media (min-width: 480px) {
   .page-wrapper {
     max-width: 999px;
+    width: 100vw;
   }
 
   /* ====== Top Menu ====== */
