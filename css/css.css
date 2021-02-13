@@ -1232,6 +1232,156 @@ footer {
   .services-text p {
     font-weight: bold;
   }
+
+   /* ====== Additional ====== */
+
+    .additional-wrapper h2 {
+     font-size: 40px;
+     width: 100%;
+   }
+   .additional-content {
+     width: 769px;
+     grid-gap: 13px 30px;
+     grid-template-columns: repeat(10, 1fr);
+     grid-template-rows:  repeat(3, 1fr);
+   }
+   .additional-item {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+   }
+   .additional-item:nth-child(1) {
+     grid-column: 1/3;
+   }
+   .additional-item:nth-child(2) {
+     grid-column: 3/5;
+   }
+   .additional-item:nth-child(3) {
+     grid-column: 5/7;
+   }
+   .additional-item:nth-child(4) {
+     grid-column: 7/9;
+   }
+   .additional-item:nth-child(5) {
+     grid-column: 9/11;
+   }
+   .additional-item:nth-child(6) {
+     grid-column: 2/4;
+   }
+   .additional-item:nth-child(7) {
+     grid-column: 4/6;
+   }
+   .additional-item:nth-child(8) {
+     grid-column: 6/8;
+   }
+   .additional-item:nth-child(9) {
+     grid-column: 8/10;
+   }
+   .additional-item:nth-child(10) {
+     grid-column: 3/5;
+   }
+   .additional-item:nth-child(11) {
+     grid-column: 5/7;
+   }
+   .additional-item:nth-child(12) {
+     grid-column: 7/9;
+   }
+   .additional-item p {
+     font-size: 6px;
+   }
+   .additional-item-pic {
+     height: auto;
+  }
+
+  /* ====== Work ====== */
+
+  .work-wrapper {
+    width: 741px;
+    margin-top: 100px;
+  }
+  .work-wrapper h2 {
+    font-size: 40px;
+  }
+  .work-content {
+    padding-left: 0;
+  }
+  .work-content ol {
+    margin-top: 45px;
+  }
+  .work-content ol li {
+    width: 329px;
+    text-align: right;
+  }
+  .work-content ol li:not(:first-child) h3 {
+    margin-top: 26px;
+  }
+  .work-content ol li:nth-child(even) {
+    margin-left: auto;
+    text-align: left;
+  }
+  .work-content ol li::before {
+    left: -53px;
+  }
+  .work-content ol li:nth-child(odd)::before {
+    left: calc(100% + 30px);
+  }
+  .work-content ol li:not(:last-child)::after {
+    left: -38px;
+    border-width: 2px;
+  }
+  .work-content ol li:nth-child(odd)::after {
+    left: calc(100% + 45.5px);
+  }
+  .work-content ol li:hover h3 {
+    color: #d84315;
+    transition: 0.75s;
+  }
+  .work-content ol li:hover::before {
+    background: #d84315;
+  }
+  .work-content ol li:hover::after {
+    border-color: #d84315;
+  }
+  @keyframes circleBackground {
+    0%    {background: #7202BB;}
+    100%  {background: #c6ff00;}
+  }
+  .work-content ol li:hover+li::before {
+    animation: circleBackground 1s 0.5s infinite alternate;
+  }
+
+  /* ====== Sentence ====== */
+
+  .sentence-wrapper {
+    padding: 44px 0;
+    width: 703px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    text-align: left;
+  }
+  .sentence-wrapper h2 {
+    width: max-content;
+  }
+  .sentence-wrapper p {
+    width: 311px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .sentence-wrapper h3, .sentence-wrapper form {
+    margin: 0;
+  }
+  .sentence-wrapper form {
+    float: right;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    justify-self: end;
+  }
+  .sentence-wrapper input[type=submit] {
+    margin: 0;
+  }
+
 }
 @media (min-width:480px) and (max-width: 800px) {
   header {
@@ -1413,6 +1563,56 @@ footer {
   }
   .services-text p {
     font-size: 1.75vw;
+  }
+  .additional-wrapper h2 {
+    font-size: 5vw;
+  }
+  .additional-content {
+    width: 96.125%;
+    grid-gap: 1.625vw 3.75vw;
+  }
+  .additional-item p {
+    font-size: 0.75vw;
+  }
+  .work-wrapper {
+    width: 92.625vw;
+    margin-top: 12.5vw;
+  }
+  .work-wrapper h2 {
+    font-size: 5vw;
+  }
+  .work-content ol {
+    margin-top: 5.625vw;
+  }
+  .work-content ol li {
+    width: 41.125vw;
+  }
+  .work-content ol li h3 {
+    font-size: 1.725vw;
+    margin-top: 2.5vw;
+  }
+  .work-content ol li:not(:first-child) h3 {
+    margin-top: 3.25vw;
+  }
+  .work-content ol li::before {
+    width: 4.125vw;
+    height: 4.125vw;
+    line-height: 4.125vw;
+    font-size: 2.75vw;
+    left: -6.625vw;
+  }
+  .work-content ol li:nth-child(odd)::before {
+    left: calc(100% + 3.75vw);
+  }
+  .work-content ol li:not(:last-child)::after {
+    left: -4.75vw;
+  }
+  .work-content ol li:nth-child(odd)::after {
+    left: calc(100% + 5.6vw);
+  }
+  .work-content p {
+    font-size: 1.375vw;
+    margin-top: 0.625vw;
   }
 }
 @media (min-width: 480px) and (max-width: 750px) {
