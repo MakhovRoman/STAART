@@ -698,6 +698,15 @@ div[class^="services"] {
 
 /* ====== Clients ====== */
 
+#viewport {
+  display: none;
+}
+#viewSlider {
+  display: none;
+}
+.clients button {
+  display: none;
+}
 .clients-wrapper  {
   width: 319px;
   margin: 35px auto 0 auto;
@@ -1389,12 +1398,13 @@ footer {
 
   .clients {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
   }
   .clients-wrapper {
     display: none;
   }
   #viewport {
+    display: block;
     width: 851px;
     height: 352px;
     margin-left: auto;
@@ -1416,6 +1426,7 @@ footer {
   }
   .slide {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
   }
@@ -1452,10 +1463,11 @@ footer {
   .viewSlide {
     width: 20px;
     height: 20px;
-    color: red;
+    background-color: #939393;
     border-radius: 50%;
   }
   .clients button {
+    display: block;
     width: 51px;
     height: 51px;
     background-color: #7202bb;
@@ -1555,8 +1567,51 @@ footer {
   .footer-bot-item:last-child h3 {
     font-size: 11px;
   }
-
  }
+@media (min-width: 480px) and (max-width: 960px) {
+  #viewport {
+    width: 88.65vw;
+    height: 36.666vw;
+  }
+  #viewport h1 {
+    font-size: 4.16666vw;
+    top: 5.73vw;
+  }
+  .slideContent {
+    margin-top: 13.02vw;
+  }
+  .slideContent h3 {
+    font-size: 2.4vw;
+  }
+  .slideContent p {
+    font-size: 1.25vw;
+    width: 31.25vw;
+  }
+  .clients button {
+    width: 5.3125vw;
+    height: 5.3125vw;
+    font-size: 3.02vw;
+    line-height: 5.3125vw;
+    top: calc(50% - 2.66vw);
+  }
+  .viewSlide {
+    width: 2.08333vw;
+    height: 2.08333vw;
+  }
+  #viewSlider {
+    width: calc(3.125vw * 3);
+    left: calc(60% - (3.125vw * 3));
+    bottom: calc(-2.604vw - 1.04vw);
+  }
+  #preview {
+    left: 3.33333vw;
+    padding-right: 0.3125vw;
+  }
+  #next {
+    right: 3.33333vw;
+    padding-left: 0.3125vw;
+  }
+}
 @media (min-width:480px) and (max-width: 800px) {
   header {
     margin-bottom: 6vw;
