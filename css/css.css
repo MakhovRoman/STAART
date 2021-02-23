@@ -1457,7 +1457,7 @@ footer {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    left: calc(50% + (30px * 3) / 2);
+    left: calc(45% + (30px * 3) / 2);
     bottom: calc(-25px - 10px);
   }
   .viewSlide {
