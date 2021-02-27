@@ -10,7 +10,7 @@
 /* =================== Mobile =================== */
 /* ====== Top Menu ====== */
 .page-wrapper {
-  width: 100vw;
+
   max-width: 479px;
   margin: 0 auto;
   overflow: hidden;
@@ -134,7 +134,7 @@ header {
   margin-top: 2px;
   opacity: 0.5;
 }
-.burger-box li:nth-child(8) .burger-item {
+#email {
   font-size: 10px;
 }
 .burger-box li:nth-child(9) {
@@ -899,7 +899,7 @@ footer {
 @media (min-width: 480px) {
   .page-wrapper {
     max-width: 999px;
-    width: 100vw;
+
   }
 
   /* ====== Top Menu ====== */
@@ -958,7 +958,7 @@ footer {
   .productPlace-wrapper a {
     font-size: 12px;
     padding: 10px 25px;
-    box-shadow: 0px 28px 12px -7px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0px 28px 12px -7px rgba(0, 0, 0, 0.1);
   }
 
   /* ====== Numbers ====== */
@@ -1970,6 +1970,7 @@ footer {
     text-align: center;
     box-shadow: 0px 3vw 1.5vw -0.8vw rgba(0, 0, 0, 0.1);;
   }
+}
 @media (min-width: 480px) and (max-width: 660px) {
   .numbers-wrapper {
     overflow: hidden;
@@ -1978,9 +1979,274 @@ footer {
     background-size: 100% 100%;
   }
 }
-@media (min-width:480px) and (max-width: 560px) {
+@media (min-width: 480px) and (max-width: 560px) {
   #partner {
     padding: 1.5% 3.5vw;
     margin-right: 5%;
   }
+}
+
+/* =================== Desctop =================== */
+
+@media (min-width: 1000px) {
+  .page-wrapper {
+    max-width: 1440px;
+  }
+  .top-nav-container_burger {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+  .top-nav-wrapper {
+    width: 1096px;
+    right: 12px;
+
+  }
+  .burger-box {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  .burger-box li {
+    margin: auto 10px;
+  }
+  .burger-box li a:hover {
+    color: #F2C94F;
+  }
+  .burger-box li:nth-child(7) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .burger-box li:last-child {
+    display: none;
+  }
+  #email {
+    text-align: left;
+    opacity: 0.75;
+  }
+  #partner {
+    width: 160px;
+    text-align: center;
+    border-width: 2px;
+  }
+  #partner:hover {
+    color: #F2C94F;
+    border-color: #F2C94F;
+    transition: 300ms;
+  }
+  .productPlace {
+    width: 1030px;
+    height: 452px;
+    margin: 0 auto;
+    right: 12px;
+  }
+  .productPlace-wrapper {
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    width: 444px;
+    height: 249px;
+  }
+  .productPlace-wrapper p {
+    font-size: 33px;
+  }
+  .productPlace-wrapper p:nth-child(2) {
+    top: -25px;
+  }
+  .productPlace-wrapper p:nth-child(3) {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: normal;
+    top: -13.5px;
+  }
+  .productPlace-wrapper a {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 34px;
+  }
+  .productPlace-img {
+    position: relative;
+    margin-left: auto;
+  }
+  .numbers {
+    height: 458px;
+  }
+  .numbers-wrapper {
+    grid-template-rows: 15% 1fr;
+  }
+  .numbers-radio img, .numbers-radio input[type=radio]:checked+label::after {
+    width: 85%;
+  }
+  .numbers-radio img {
+    cursor: pointer;
+  }
+  .numbers-radio input[type=radio]:checked+label::after {
+    height: 5px;
+    top: calc(100% + 8px);
+    border-radius: 10px;
+  }
+  .numbers-radio-wrapper {
+    width: 1096px;
+    padding-bottom: 10px;
+  }
+  .numbers-radio-wrapper::after {
+    height: 5px;
+    bottom: -3px;
+  }
+  .numbers-radio-wrapper::before {
+    content: "";
+    width: 3%;
+    height: 5px;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    bottom: -3px;
+    left: -25px;
+  }
+  .numbers-item-subTwo {
+    background-image: url(../images/Desktop/bg-desktop.png);
+  }
+  .numbers_radio-content {
+    top: 100px;
+    width: 516px;
+    height: auto;
+  }
+  .numbers-radio:nth-child(2) .numbers_radio-content {
+    left: calc(-100% - 30px);
+    top: 100px;
+  }
+  .numbers-radio:nth-child(3) .numbers_radio-content {
+    top: 100px;
+    left: calc(-150% - 30px);
+  }
+  .numbers-radio:nth-child(4) .numbers_radio-content {
+    top: 100px;
+    left: calc(-280% - 15px);
+  }
+  .numbers-radio:nth-child(5) .numbers_radio-content {
+    top: 100px;
+    left: calc(-410%);
+  }
+  .numbers-radio:nth-child(6) .numbers_radio-content {
+    top: 100px;
+    left: calc(-570%);
+  }
+  .numbers_radio-content h2 {
+    font-size: 33px;
+  }
+  .numbers_radio-item {
+    margin-top: 30px;
+  }
+  .numbers_radio-item p {
+    font-size: 55px;
+  }
+  .numbers_radio-item p:last-child, .numbers_radio-item p:first-child {
+    font-size: 16px;
+  }
+  .numbers_radio-item p:first-child, .numbers_radio-item p {
+    margin-top: 0;
+  }
+  .nit-wrapper {
+    margin: 25px 0 0 0;
+  }
+  .nit-wrapper h3 {
+    font-size: 33px;
+    text-align: right;
+  }
+  .nit-content, .nit-wrapper h3 {
+    margin-left: 48px;
+    width: 372px;
+  }
+  .nit-content {
+    grid-row-gap: 55px;
+    height: auto;
+    margin-top: 55px;
+  }
+  .nit-item p {
+    font-size: 55px;
+  }
+  .nit-item p:last-child {
+    font-size: 16px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1140px) {
+  .top-nav-wrapper {
+    width: 96.06vw;
+    right: 1.05vw;
+  }
+  .top-nav-container_logo {
+    width: 22.61vw;
+  }
+  .top-nav-container_logo h1 {
+    font-size: 2.89vw;
+  }
+  .top-nav-container_logo hr {
+    width: 2.72vw;
+    height: 0.26vw;
+    left: 0.35vw;
+    bottom: 0.175vw;
+  }
+  .top-nav-container_logo p {
+    width: 8.85vw;
+    font-size: 0.876vw;
+    line-height: 1.4vw;
+  }
+  .burger-box li {
+    margin: auto 0.876vw;
+  }
+  .burger-item {
+    font-size: 1.3vw;
+  }
+  #email {
+    font-size: 0.876vw;
+  }
+  #partner {
+    width: 14.02vw;
+    height: 4.12vw;
+    border-radius: 0.8vw;
+  }
+  .productPlace {
+    width: 90.35vw;
+    height: auto;
+    right: 1.05vw;
+  }
+  .productPlace-wrapper {
+    width: 38.95vw;
+    height: 21.84vw;
+  }
+  .productPlace-wrapper p {
+    font-size: 2.89vw;
+  }
+  .productPlace-wrapper p:nth-child(2) {
+    top: -2.19vw;
+  }
+  .productPlace-wrapper p:nth-child(3) {
+    font-size: 1.4vw;
+    line-height: 2.19vw;
+    top: -1.18vw;
+  }
+  .productPlace-wrapper a {
+    font-size: 1.4vw;
+    padding: 1.23vw 2.98vw;
+    box-shadow: 0vw 2.456vw 1.05vw -0.614vw rgba(0, 0, 0, 0.1);
+  }
+  .productPlace-img {
+    width: 49.82vw;
+    height: auto;
+  }
+  .productPlace-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+@media (min-width: 1000px) and (max-width: 1070px) {
+  .burger-item {
+    font-size: 1.28vw;
+  }
+
 }
