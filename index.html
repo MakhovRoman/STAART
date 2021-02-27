@@ -12,7 +12,7 @@
 <body>
   <div class="page-wrapper">
     <header>
-      <div class="top-nav-wrapper">
+      <div class="top-nav-wrapper" id="nav">
         <div class="top-nav-container_logo">
           <h1>staart</h1>
           <hr>
@@ -33,15 +33,15 @@
               <li><a href="#" class="burger-item">Lamoda</a></li>
               <li><a href="#" class="burger-item">Aliexpress</a></li>
               <li><a href="#" class="burger-item">Goods</a></li>
-              <li><a href="tel:+79452202225" class="burger-item">+7 (495) 220-22-25</a></li>
-              <li><a href="mailto:hello@staart.ru" class="burger-item">hello@staart.ru</a></li>
+              <li><a href="tel:+79452202225" class="burger-item" id="phone">+7 (495) 220-22-25</a></li>
+              <li><a href="mailto:hello@staart.ru" class="burger-item" id="email">hello@staart.ru</a></li>
               <li><a href="#" class="burger-item">Подключить<br>партнера</a></li>
             </ul>
           </div>
         </div>
         <!-- бургер меню (конец)-->
       </div>
-      <nav>
+      <nav >
 
       </nav>
     </header>
@@ -53,7 +53,11 @@
         <a href="#">Получить предложение</a>
       </div>
       <div class="productPlace-img">
-        <img src="images/Tablet/top_background_2.png" alt="">
+        <picture>
+          <source media="(min-width: 480px) and (max-width: 999px)" srcset="images/Tablet/top_background_2.png">
+          <source media="(min-width: 1000px)" srcset="images/Desktop/top_background_3.png">
+          <img srcset="images/Desktop/top_background_3.png" alt="">
+        </picture>
       </div>
     </section>
     <section class="numbers">
@@ -65,7 +69,8 @@
               <input type="radio" name="numbers_radio" id="numbers_radio_1" checked="checked">
               <label for="numbers_radio_1">
                 <picture>
-                    <source media="(min-width: 480px)" srcset="images/Tablet/wb-tablete.png">
+                    <source media="(min-width: 480px) and (max-width: 999px)" srcset="images/Tablet/wb-tablete.png">
+                    <source media="(min-width: 1000px)" srcset="images/Desktop/wb-desktop.png">
                     <source srcset="images/phone/wb.png">
                     <img src="images/phone/wb.png" alt="">
                 </picture>
@@ -98,7 +103,8 @@
               <input type="radio" name="numbers_radio" id="numbers_radio_2">
               <label for="numbers_radio_2">
                 <picture>
-                  <source media="(min-width: 480px)" srcset="images/Tablet/ozon-tablete.png">
+                  <source media="(min-width: 480px) and (max-width: 999px)" srcset="images/Tablet/ozon-tablete.png">
+                  <source media="(min-width: 1000px)" srcset="images/Desktop/ozon-desktop.png">
                   <img src="images/phone/ozon.png" alt="">
                 </picture>
               </label>
@@ -130,7 +136,8 @@
               <input type="radio" name="numbers_radio" id="numbers_radio_3">
               <label for="numbers_radio_3">
                 <picture>
-                  <source media="(min-width: 480px)" srcset="images/Tablet/yandex-tablete.png">
+                  <source media="(min-width: 480px) and (max-width: 999px)" srcset="images/Tablet/yandex-tablete.png">
+                  <source media="(min-width:1000px)" srcset="images/Desktop/yandex-desktop.png">
                   <img src="images/phone/yandex.png" alt="">
                 </picture>
               </label>
@@ -139,7 +146,7 @@
                 <div class="numbers_radio-item">
                   <p>Более</p>
                   <p>60 000</p>
-                  <p><Брендов на сайте</p>
+                  <p>Брендов на сайте</p>
                 </div>
                 <div class="numbers_radio-item">
                   <p>Более</p>
@@ -162,7 +169,8 @@
               <input type="radio" name="numbers_radio" id="numbers_radio_4">
               <label for="numbers_radio_4">
                 <picture>
-                  <source media="(min-width: 480px)" srcset="images/Tablet/lamod-tablete.png">
+                  <source media="(min-width: 480px) and (max-width: 999px)" srcset="images/Tablet/lamod-tablete.png">
+                  <source media="(min-width: 1000px)" srcset="images/Desktop/lamoda-desktop.png">
                   <img src="images/phone/lamoda.png" alt="">
                 </picture>
               </label>
@@ -171,7 +179,7 @@
                 <div class="numbers_radio-item">
                   <p>Более</p>
                   <p>70 000</p>
-                  <p><Брендов на сайте</p>
+                  <p>Брендов на сайте</p>
                 </div>
                 <div class="numbers_radio-item">
                   <p>Более</p>
@@ -194,7 +202,8 @@
               <input type="radio" name="numbers_radio" id="numbers_radio_5">
               <label for="numbers_radio_5">
                 <picture>
-                  <source media="(min-width: 480px)" srcset="images/Tablet/aliexpress-tablete.png">
+                  <source media="(min-width: 480px) and (max-width: 999px)" srcset="images/Tablet/aliexpress-tablete.png">
+                  <source media="(min-width: 1000px)" srcset="images/Desktop/aliexpress-desktop.png">
                   <img src="images/phone/aliexpress.png" alt="">
                 </picture>
               </label>
@@ -226,8 +235,9 @@
               <input type="radio" name="numbers_radio" id="numbers_radio_6">
               <label for="numbers_radio_6">
                 <picture>
-                  <source media="(min-width: 480px)" srcset="images/Tablet/goods-tablete.png">
-                    <img src="images/phone/goods.png" alt="">
+                  <source media="(min-width: 480px) and (max-width: 999px)" srcset="images/Tablet/goods-tablete.png">
+                  <source media="(min-width: 1000px)" srcset="images/Desktop/goods-desktop.png">
+                  <img src="images/phone/goods.png" alt="">
                 </picture>
               </label>
               <div class="numbers_radio-content">
@@ -580,7 +590,6 @@
       </div>
     </footer>
   </div>
-  <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/index-js.js"></script>
 </body>
 </html>
