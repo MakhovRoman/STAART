@@ -2112,7 +2112,7 @@ footer {
   .numbers_radio-content {
     top: 100px;
     width: 516px;
-    height: auto;
+    height: max-content;
   }
   .numbers-radio:nth-child(2) .numbers_radio-content {
     left: calc(-100% - 30px);
@@ -2151,6 +2151,7 @@ footer {
   }
   .nit-wrapper {
     margin: 25px 0 0 0;
+    height: max-content;
   }
   .nit-wrapper h3 {
     font-size: 33px;
@@ -2163,7 +2164,7 @@ footer {
   .nit-content {
     grid-row-gap: 55px;
     height: auto;
-    margin-top: 55px;
+    margin-top: 53px;
   }
   .nit-item p {
     font-size: 55px;
@@ -2172,7 +2173,71 @@ footer {
     font-size: 16px;
     margin-top: 0;
   }
+  .helpful-wrapper {
+    width: 1096px;
+    padding: 75px 0;
+    position: relative;
+    right: 12px;
+  }
+  .helpful-wrapper>p {
+    font-size: 55px;
+  }
+  .helpful-content {
+    width: max-content;
+  }
+  .helpful-content h3 {
+    font-size: 20px;
+    margin-top: 17px;
+  }
+  .helpful-content p {
+    font-size: 16px;
+    width: 312px;
+    margin-top: 9px;
+  }
+  .success {
+    height: 560px;
+  }
+  .success-wrapper {
+    height: 445px;
+    width: 1046px;
+    position: relative;
+    right: 12px;
+    background-image: url(../images/Desktop/Mockup_1-Desktop.png), url(../images/Desktop/g1.png), url(../images/Desktop/g2.png), url(../images/Desktop/g3.png);
+    background-position: left center, 21% 77%, 0% 15%, 28% 2%;
+    background-size: 25.53%, 7%, 7%, 7%;
+  }
+  .success-content {
+    margin-left: 351px;
+    width: 698px;
+  }
+  .success-content h2 {
+    font-size: 51px;
+    align-self: end;
+  }
+  .success-content h3 {
+    font-size: 33px;
+    margin-top: 0;
+  }
+  .success-content p {
+    font-size: 21px;
+    margin-top: 0;
+  }
+  .success-content a {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: end;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 0;
+    padding: 18px 18px;
+    font-size: 18px;
+  }
+  .success-content a {
+    font-size: 1.579vw;
+    padding: 1.579vw;
+  }
 }
+
 @media (min-width: 1000px) and (max-width: 1140px) {
   .top-nav-wrapper {
     width: 96.06vw;
@@ -2242,11 +2307,91 @@ footer {
     max-width: 100%;
     height: auto;
   }
-
+  .numbers {
+    height: 40.175vw;
+    margin-top: 4.47vw;
+  }
+  .numbers-radio-wrapper {
+    width: 96.14vw;
+    padding-bottom: 0.877vw;
+  }
+  .numbers-radio-wrapper::after {
+    height: 7px;
+    bottom: -4.5px;
+  }
+  .numbers_radio-content {
+    width: 45.263vw;
+    top: 8.772vw;
+  }
+  .numbers_radio-item {
+    margin-top: 2.632vw;
+  }
+  .numbers_radio-item p {
+    font-size: 4.825vw;
+  }
+  .numbers_radio-item p:first-child, .numbers_radio-item p:last-child {
+    font-size: 1.4vw;
+  }
+  .numbers_radio-content h2 {
+    font-size: 2.894vw;
+  }
+  .nit-wrapper {
+    margin-top: 2.193vw;
+  }
+  .nit-content, .nit-wrapper h3 {
+    margin-left: 4.21vw;
+    width: 32.63vw;
+  }
+  .nit-content {
+    margin-top: 4.649vw;
+    grid-row-gap: 4.824vw;
+  }
+  .nit-item p {
+    font-size: 4.824vw;
+  }
+  .nit-item p:last-child {
+    font-size: 1.4vw;
+  }
+  .helpful-wrapper {
+    width: 96.14vw;
+    padding: 6.58vw 0;
+  }
+  .helpful-wrapper>p {
+    font-size: 4.824vw;
+    margin-bottom: 4.912vw;
+  }
+  .helpful-content h3 {
+    font-size: 1.754vw;
+    margin-top: 1.491vw;
+  }
+  .helpful-content p {
+    font-size: 1.4vw;
+    width: 27.368vw;
+    margin-top: 0.79vw;
+  }
+  .success {
+    height: 48.123vw;
+  }
+  .success-wrapper {
+    height: 39.035vw;
+    width: 91.75vw;
+  }
+  .success-content {
+    width: 61.23vw;
+    margin-left: 30.789vw;
+  }
+  .success-content h2 {
+    font-size: 4.474vw;
+  }
+  .success-content h3 {
+    font-size: 2.895vw;
+  }
+  .success-content p {
+    font-size: 1.842vw;
+  }
 }
 @media (min-width: 1000px) and (max-width: 1070px) {
   .burger-item {
     font-size: 1.28vw;
   }
-
 }
