@@ -2433,6 +2433,39 @@ footer {
   }
   .formLinks {
     width: 43.158%;
+    grid-gap: 61px 95px;
+  }
+  .formLinksContacts {
+    position: relative;
+    bottom: 31px;
+  }
+  .formLinksContacts a {
+    font-size: 20px;
+  }
+  .formLinksContacts a:last-child {
+    font-size: 12px;
+  }
+  .setup-wrapper {
+    width: 52.153%;
+    padding: 2.68% 1.914% 1.72% 2.39%;
+    box-sizing: border-box;
+  }
+  .setup-wrapper h2 {
+    font-size: 32px;
+  }
+  .setup-wrapper form input:not([type=submit]) {
+    margin-bottom: 23px;
+    font-size: 16px;
+    padding-bottom: 3px;
+  }
+  .setup-wrapper form input:not([type=submit])::placeholder {
+    font-size: 16px;
+  }
+  .setup-wrapper form input[type=submit] {
+    height: 59px;
+  }
+  .setup-wrapper p {
+    font-size: 16px;
   }
   footer {
     height: 120px;
@@ -2448,6 +2481,40 @@ footer {
   .slideContent h3 {
     font-size:  calc((100vw - 1000px) / (1300 - 1000) * (33 - 21) + 21px);
     line-height: calc((100vw - 1000px) / (1300 - 1000) * (50 - 40) + 40px);
+  }
+}
+@media (min-width: 1000px) and (max-width: 1380px) {
+  .setup {
+    width: 75.725%;
+    left: 0.833333vw;
+  }
+  .setup-wrapper h2 {
+    font-size: 2.32vw;
+  }
+  .setup-wrapper form input:not([type=submit]) {
+    font-size: 1.16vw;
+    margin-bottom: 1.66666vw;
+    padding-bottom: 0.217vw;
+  }
+  .setup-wrapper form input[type=submit] {
+    height:4.275vw;
+    font-size: 1.304vw;
+    margin-bottom: 1.086vw;
+  }
+  .setup-wrapper p {
+    font-size: 1.16vw;
+  }
+  .formLinks {
+    grid-gap: 4.42vw 6.88vw;
+  }
+  .formLinksContacts {
+    bottom: 2.25vw;
+  }
+  .formLinksContacts a {
+    font-size: 1.45vw;
+  }
+  .formLinksContacts a:last-child {
+    font-size: 0.87vw;
   }
 }
 @media (min-width: 1000px) and (max-width: 1140px) {

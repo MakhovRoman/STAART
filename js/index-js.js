@@ -16,10 +16,26 @@ function addFormLinks(windowSizeMedium) {
                      '<source media="(min-width: 1000px)" srcset="images/Desktop/ozon-desktop.png">' +
                      '<img src="images/Tablet/ozon-tablete.png" id="Ozon">' +
                      '</picture>' + '</a>' +
-   '<a href="#">' + '<img src="images/Tablet/yandex-tablete.png" id="Yandex">' + '</a>' +
-   '<a href="#">' + '<img src="images/Tablet/lamod-tablete.png" id="Lamoda">' + '</a>'+
-   '<a href="#">' + '<img src="images/Tablet/aliexpress-tablete.png" id="Aliexpress">' + '</a>' +
-   '<a href="#">' + '<img src="images/Tablet/goods-tablete.png" id="Goods">' + '</a>' +
+   '<a href="#">' +  '<picture>' +
+                     '<source media="(max-width: 999px)" srcset="images/Tablet/yandex-tablete.png">' +
+                     '<source media="(min-width: 1000px)" srcset="images/Desktop/yandex-desktop.png">' +
+                     '<img src="images/Tablet/yandex-tablete.png" id="Yandex">' +
+                     '</picture>' + '</a>' +
+   '<a href="#">' +  '<picture>' +
+                     '<source media="(max-width: 999px)" srcset="images/Tablet/lamod-tablete.png">' +
+                     '<source media="(min-width: 1000px)" srcset="images/Desktop/lamoda-desktop.png">' +
+                     '<img src="images/Tablet/lamod-tablete.png" id="Lamoda">' +
+                     '</picture>' + '</a>'+
+   '<a href="#">' +  '<picture>' +
+                     '<source media="(max-width: 999px)" srcset="images/Tablet/aliexpress-tablete.png">' +
+                     '<source media="(min-width: 1000px)" srcset="images/Desktop/aliexpress-desktop.png">' +
+                     '<img src="images/Tablet/aliexpress-tablete.png" id="Aliexpress">' +
+                     '</picture>' + '</a>' +
+   '<a href="#">' +  '<picture>' +
+                     '<source media="(max-width: 999px)" srcset="images/Tablet/goods-tablete.png">' +
+                     '<source media="(min-width: 1000px)" srcset="images/Desktop/goods-desktop.png">' +
+                     '<img src="images/Tablet/goods-tablete.png" id="Goods">' +
+                     '</picture>' + '</a>' +
    '<div class="formLinksContacts">' + '<a href="tel:+79452202225">' + '+7 (495) 220-22-25' + '</a>' + '<a href="mailto:hello@staart.ru">' + 'hello@staart.ru' + '</a>' + '</div>';
    let removeFormLinks  = document.getElementsByClassName('formLinks')[0];
    if (windowSizeMedium.matches) {
