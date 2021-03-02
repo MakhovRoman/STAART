@@ -5,7 +5,22 @@ function addFormLinks(windowSizeMedium) {
    let setup            = document.getElementsByClassName('setup')[0];
    let formLinks        = document.createElement('div');
    formLinks.className  = 'formLinks';
-   formLinks.innerHTML  = '<a href="#">' + '<img src="images/Tablet/wb-tablete.png" id="Wildberries">' + '</a>' + '<a href="#">' + '<img src="images/Tablet/ozon-tablete.png" id="Ozon">' + '</a>' + '<a href="#">' + '<img src="images/Tablet/yandex-tablete.png" id="Yandex">' + '</a>' + '<a href="#">' + '<img src="images/Tablet/lamod-tablete.png" id="Lamoda">' + '</a>'+ '<a href="#">' + '<img src="images/Tablet/aliexpress-tablete.png" id="Aliexpress">' + '</a>' + '<a href="#">' + '<img src="images/Tablet/goods-tablete.png" id="Goods">' + '</a>' + '<div class="formLinksContacts">' + '<a href="tel:+79452202225">' + '+7 (495) 220-22-25' + '</a>' + '<a href="mailto:hello@staart.ru">' + 'hello@staart.ru' + '</a>' + '</div>';
+   formLinks.innerHTML  =
+   '<a href="#">' + '<picture>' +
+                     '<source media="(max-width: 999px)" srcset="images/Tablet/wb-tablete.png">' +
+                     '<source media="(min-width: 1000px)" srcset="images/Desktop/wb-desktop.png">' +
+                     '<img src="images/Tablet/wb-tablete.png" id="Wildberries">' +
+                     '</picture' + '</a>' +
+   '<a href="#">' + '<picture>' +
+                     '<source media="(max-width: 999px)" srcset="images/Tablet/ozon-tablete.png">' +
+                     '<source media="(min-width: 1000px)" srcset="images/Desktop/ozon-desktop.png">' +
+                     '<img src="images/Tablet/ozon-tablete.png" id="Ozon">' +
+                     '</picture>' + '</a>' +
+   '<a href="#">' + '<img src="images/Tablet/yandex-tablete.png" id="Yandex">' + '</a>' +
+   '<a href="#">' + '<img src="images/Tablet/lamod-tablete.png" id="Lamoda">' + '</a>'+
+   '<a href="#">' + '<img src="images/Tablet/aliexpress-tablete.png" id="Aliexpress">' + '</a>' +
+   '<a href="#">' + '<img src="images/Tablet/goods-tablete.png" id="Goods">' + '</a>' +
+   '<div class="formLinksContacts">' + '<a href="tel:+79452202225">' + '+7 (495) 220-22-25' + '</a>' + '<a href="mailto:hello@staart.ru">' + 'hello@staart.ru' + '</a>' + '</div>';
    let removeFormLinks  = document.getElementsByClassName('formLinks')[0];
    if (windowSizeMedium.matches) {
       setup.insertAdjacentElement("afterbegin", formLinks);

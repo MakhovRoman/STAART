@@ -2398,41 +2398,58 @@ footer {
     display: none;
   }
   #viewport {
-    width: 86.597vw;
-    height: 34.4444vw;
+    width: 86.597%;
+    height: 34.4444%;
   }
   #viewport h1 {
-    font-size: 3.819vw;
-    top: 5.208vw;
+    font-size: 55px;
+    top: 15.4%;
   }
   .slideContent {
-    margin-top: 12.014vw;
+    margin-top: 12.014%;
+    width: 43.06335%;
   }
   .slideContent h3 {
-    font-size: 2.291vw;
-    line-height: 3.472vw;
+    font-size: 33px;
+    line-height: 50px;
   }
   .slideContent p {
-    font-size: 1.458vw;
-    width: 31.11111vw;
+    font-size: calc((100vw - 1000px) / (1440 - 1000) * (21 - 14) + 14px);
+    width: 83.42644%;
   }
   .slideContent p+p {
-    width: 37.291vw;
+    width: 100%;
   }
   #preview {
-    left: 3.75vw;
+    left: 54px;
   }
   #next {
-    right: 3.75vw;
+    right: 54px;
+  }
+  .setup {
+    width: 1045px;
+    position: relative;
+    left: 11.5px;
+  }
+  .formLinks {
+    width: 43.158%;
   }
   footer {
     height: 120px;
   }
   .footer-wrapper {
-    width: 83.33333vw;
+    width: 83.33333%;
   }
 }
-
+@media (min-width: 1000px) and (max-width: 1300px) {
+  #viewport  h1 {
+    font-size: calc((100vw - 1000px) / (1300 - 1000) * (55 - 40) + 40px);
+  }
+  .slideContent h3 {
+    font-size:  calc((100vw - 1000px) / (1300 - 1000) * (33 - 21) + 21px);
+    line-height: calc((100vw - 1000px) / (1300 - 1000) * (50 - 40) + 40px);
+  }
+}
 @media (min-width: 1000px) and (max-width: 1140px) {
   .top-nav-wrapper {
     width: 96.06vw;
