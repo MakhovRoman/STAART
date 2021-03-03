@@ -117,3 +117,75 @@ btnPreview.addEventListener('click', function() {
    viewSliders[viewSlide].style.backgroundColor = "#7202bb";
    slider.style.left = -viewSlide * viewport + "px";
 });
+
+//плавное появление блоков при скроллинге
+
+window.addEventListener('scroll', (e) => {
+   let helpful    =  document.getElementById('helpful');
+   let success    =  document.getElementById('success');
+   let services   =  document.getElementById('services');
+   let additional =  document.getElementById('additional');
+   let firstLine  =  document.getElementsByClassName('firstLine');
+   let secondLine =  document.getElementsByClassName('secondLine');
+   let thirdLine  =  document.getElementsByClassName('thirdLine');
+   let y = scrollY;
+   if (y>300) {
+      helpful.style.opacity="1";
+      helpful.style.transition="1.3s";
+      helpful.style.top="0";
+   } else {
+      helpful.style.opacity="0";
+      helpful.style.top="300px";
+   };
+   if (y>850) {
+      success.style.opacity="1";
+      success.style.transition="1.3s";
+      success.style.top="0";
+   } else {
+      success.style.opacity="0";
+      success.style.top="300px";
+   };
+   if (y>1500) {
+      services.style.opacity="1";
+      services.style.transition="1.3s";
+      services.style.top="0";
+   } else {
+      services.style.opacity="0";
+      services.style.top="300px";
+   };
+   if (y>2200) {
+      additional.style.opacity="1";
+      additional.style.transition="1.3s";
+      additional.style.top="0";
+      for (let i=0; i < firstLine.length; i++) {
+         firstLine[i].style.opacity="1";
+         firstLine[i].style.transition="1.8s";
+         firstLine[i].style.top="0";
+      };
+      for (let i=0; i < secondLine.length; i++) {
+         secondLine[i].style.opacity="1";
+         secondLine[i].style.transition="2.3s";
+         secondLine[i].style.top="0";
+      };
+      for (let i=0; i<thirdLine.length; i++) {
+         thirdLine[i].style.opacity="1";
+         thirdLine[i].style.transition="2.8s";
+         thirdLine[i].style.top="0";
+      };
+   } else {
+      additional.style.opacity="0";
+      additional.style.top="300px";
+      for (let i=0; i < firstLine.length; i++) {
+         firstLine[i].style.opacity="0";
+         firstLine[i].style.top="500px";
+      };
+      for (i=0; i<secondLine.length; i++) {
+         secondLine[i].style.opacity="0";
+         secondLine[i].style.top="700px";
+      };
+      for (let i=0; i<thirdLine.length; i++) {
+         thirdLine[i].style.opacity="0";
+         thirdLine[i].style.top="900px";
+      };
+   };
+});

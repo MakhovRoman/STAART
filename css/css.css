@@ -2239,8 +2239,8 @@ footer {
     font-size: 18px;
   }
   .success-content a {
-    font-size: 1.579vw;
-    padding: 1.579vw;
+    font-size: 18px;
+    padding: 2.87%;
   }
   div.services-wrapper {
     width: 1096px;
@@ -2472,6 +2472,9 @@ footer {
   }
   .footer-wrapper {
     width: 83.33333%;
+  }
+  #helpful, #success, #services, #additional, .additional-item {
+    position: relative;
   }
 }
 @media (min-width: 1000px) and (max-width: 1300px) {
