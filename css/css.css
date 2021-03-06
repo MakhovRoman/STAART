@@ -2473,7 +2473,7 @@ footer {
   .footer-wrapper {
     width: 83.33333%;
   }
-  #helpful, #success, #services, #additional, .additional-item {
+  #helpful, #success, #services, #additional, .additional-item, #work, #sentence {
     position: relative;
   }
 }

@@ -128,6 +128,8 @@ window.addEventListener('scroll', (e) => {
    let firstLine  =  document.getElementsByClassName('firstLine');
    let secondLine =  document.getElementsByClassName('secondLine');
    let thirdLine  =  document.getElementsByClassName('thirdLine');
+   let work       =  document.getElementById('work');
+   let sentence   =  document.getElementById('sentence');
    let y = scrollY;
    if (y>300) {
       helpful.style.opacity="1";
@@ -188,4 +190,20 @@ window.addEventListener('scroll', (e) => {
          thirdLine[i].style.top="900px";
       };
    };
+   if (y>3000) {
+      work.style.opacity="1";
+      work.style.transition="1.3s";
+      work.style.top="0";
+   } else {
+      work.style.opacity="0";
+      work.style.top="500px";
+   }
+   if (y>4000) {
+      sentence.style.opacity="1";
+      sentence.style.transition="1.3s";
+      sentence.style.top="0";
+   } else {
+      sentence.style.opacity="0";
+      sentence.style.top="300px";
+   }
 });
