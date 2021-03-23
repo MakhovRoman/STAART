@@ -206,7 +206,7 @@ header {
  }
 @keyframes type {
   from  {width: 0px;}
-  to    {width: 200px;}
+  to    {width: 300px;}
 }
 @keyframes blink {
   form  {border-right-color: black;}
@@ -218,7 +218,7 @@ header {
   align-self: flex-end;
   white-space: nowrap;
   overflow: hidden;
-  animation: type 1.5s steps(16) 3 alternate backwards, blink 500ms infinite;
+  animation: type 2s steps(20) 3 alternate backwards, blink 500ms infinite;
   border-right: 2px solid black;
   box-sizing: border-box;
   padding-right: 5px;
