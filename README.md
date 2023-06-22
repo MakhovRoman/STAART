@@ -6,3 +6,7 @@
   <li>сделать рефактор кода</li>
   <li>проверить места в макете с "поехавшей" версткой</li>
 </ul>
+
+<h3>Stack</h3>
+
+![My Skills](https://skillicons.dev/icons?i=html,css)
